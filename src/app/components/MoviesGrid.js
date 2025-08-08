@@ -2,11 +2,8 @@ import Card from '@/app/components/Card';
 
 export default function MoviesGrid({ movies, loading }) {
   return (
-    <div className='grid'>
-      {
-        //2. Borrar este comentario y completar el código para mostrar las películas
-        
-      }
+    <div className='grid grid-cols-3'>
+      {movies.map((movie) => <Card movie = {movie}/>)}
     </div>
   );
 }
